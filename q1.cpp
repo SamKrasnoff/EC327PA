@@ -1,5 +1,5 @@
 #include <iostream>
-#include <array>
+#include <string>
 using namespace std;
 int main(){
     float sum = 0;
