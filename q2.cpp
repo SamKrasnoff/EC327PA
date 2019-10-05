@@ -35,6 +35,12 @@ int main(){
     else if ((sq1coor[1] < sq2coor[1] && sq1coor[1] > sq2coor[0]) && (sq1coor[2] < sq2coor[2] && sq1coor[2] > sq2coor[3])){
         cout << "THE SQUARES INTERSECT" << endl;
     }
+    else if ((sq1coor[0] == sq2coor[0]) || (sq1coor[1] == sq2coor[1]) || (sq1coor[2] == sq2coor[2]) || (sq1coor[3] == sq2coor[3]){
+        cout << "THE SQUARES INTERSECT" << endl;
+    }
+    else if ((sq1coor[0] == sq2coor[1]) || (sq1coor[2] == sq2coor[1]) || (sq1coor[3] == sq2coor[1] || (sq2coor[0] == sq1coor[1]) || (sq2coor[2] == sq1coor[1]) || (sq2coor[3] == sq1coor[1]){
+        cout << "THE SQUARES INTERSECT" << endl;
+    }
     else{
         cout << "THE SQUARES DO NOT INTERSECT" << endl;
     }
