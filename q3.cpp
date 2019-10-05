@@ -8,9 +8,14 @@ int main(){
     int maxtern1 = 1;
     int maxtern2 = 1;
     int hamming = 0;
-    cout << "Enter two numbers: " << endl;
+    cout << "Enter two numbers between 0 and 100: " << endl;
     cin >> num1;
     cin >> num2;
+    while ( !(num1 >= 0 && num <= 100) || !(num1 >= 0 && num <= 100)){
+        cout << "Enter two numbers between 0 and 100: " << endl;
+        cin >> num1;
+        cin >> num2;
+    }
     int n1 = num1;
     int n2 = num2;
     int output = num1 - num2;
@@ -30,7 +35,6 @@ int main(){
     }
     maxtern1 /=3;
     maxtern2 /=3;
-    cout << maxtern1 << " " << output << endl;
     while (num1 > 0){
         if ((num1 - (2 * maxtern1)) >= 0){
             num1 -= 2*maxtern1;
