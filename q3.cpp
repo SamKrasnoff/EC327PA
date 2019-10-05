@@ -11,7 +11,7 @@ int main(){
     cout << "Enter two numbers between 0 and 100: " << endl;
     cin >> num1;
     cin >> num2;
-    while ( !(num1 >= 0 && num <= 100) || !(num1 >= 0 && num <= 100)){
+    while ( !(num1 >= 0 && num1 <= 100) && !(num2 >= 0 && num2 <= 100)){
         cout << "Enter two numbers between 0 and 100: " << endl;
         cin >> num1;
         cin >> num2;
@@ -69,12 +69,12 @@ int main(){
     }
     if (numstring1.length() < numstring2.length()){
         while (numstring1.length() < numstring2.length()){
-            numstring1.append("0");
+            numstring1.insert(0,"0");
         }
     }
     if (numstring2.length() < numstring1.length()){
         while (numstring2.length() < numstring1.length()){
-            numstring2.append("0");
+            numstring2.insert(0,"0");
         }
     }
     for(int i = 0; i < numstring1.length(); i++){
