@@ -67,6 +67,12 @@ int main(){
             maxtern2 /= 3;
         }
     }
+    if (maxtern1 == 1){
+            numstring1.append("0");
+        }
+    if (maxtern2 == 1){
+            numstring2.append("0");
+        }
     if (numstring1.length() < numstring2.length()){
         while (numstring1.length() < numstring2.length()){
             numstring1.insert(0,"0");
